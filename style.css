@@ -123,29 +123,49 @@ label {
     line-height: 1.4;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 720px) {
+    body {
+        padding: 20px;
+    }
+
+    img {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+        line-height: 1.2;
+        margin-bottom: 20px;
+    }
+
     .content {
         flex-direction: column;
-        align-items: center;
+        align-items: stretch;
+        width: 100%;
+        max-width: 280px;
+        gap: 0; /* Remove gap para controlar via margem nos labels */
     }
-    
-    .input {
-        width: 80%;
-        max-width: 200px;
-    }
-    
-    .button {
-        width: 80%;
-        max-width: 200px;
-    }
-}
 
-@media (max-width: 350px) {
-    h1 {
-        font-size: 28px;
+    .input {
+        width: 100%;
+        margin-bottom: 15px;
     }
-    
+
+    .button {
+        width: 100%;
+        max-width: none;
+        padding: 15px; /* Botão maior para facilitar o toque */
+    }
+
     .solution {
         font-size: 2rem;
+        width: 100%;
+        max-width: 280px;
+    }
+
+    label {
+        margin-top: 10px;
+        margin-bottom: 5px;
     }
 }
