@@ -71,16 +71,18 @@ button:active {
     opacity: 0.8;
 }
 
+label {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    color: #fff;
+    max-width: 225px;
+}
+
 .solution {
     margin-top: 10px;
     font-size: 1.5rem;
     color: #fff;
-    max-width: 250px;
-    min-width: 249px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    max-width: 225px;
 }
 
 ::-webkit-inner-spin-button {
