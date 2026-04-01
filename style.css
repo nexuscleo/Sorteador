@@ -113,3 +113,12 @@ label {
     -webkit-appearance: none;
     margin: 0;
 }
+
+.message {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    max-width: 250px;
+    text-align: center;
+    margin-top: 10px;
+    line-height: 1.4;
+}
