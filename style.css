@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
 
+:root {
+    --bg-color: #121212;      /* Tom 1: Fundo */
+    --surface-color: #1e1e1e; /* Tom 2: Superfície/Inputs */
+    --border-color: #333333;  /* Tom 3: Bordas/Divisores */
+    --text-secondary: #a0a0a0;/* Tom 4: Texto secundário */
+}
+
 * {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -9,7 +16,7 @@
 }
 
 body {
-    background: #121212;
+    background: var(--bg-color);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -32,14 +39,14 @@ h1 {
     display: flex;
     align-items: flex-start;
     gap: 15px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .input {
     padding: 10px;
     width: 100px;
-    background: #1e1e1e;
-    border: 1px solid #333333;
+    background: var(--surface-color);
+    border: 1px solid var(--border-color);
     border-radius: 5px;
     font-size: 1.1rem;
     color: #fff;
@@ -47,14 +54,14 @@ h1 {
 }
 
 .input:focus {
-    border-color: #666666;
+    border-color: #ffffff;
 }
 
 .result {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
 }
 
 .button {
@@ -72,7 +79,7 @@ h1 {
 }
 
 .button:hover {
-    background: #e0e0e0;
+    background: #cccccc;
     opacity: 1;
 }
 
@@ -82,14 +89,20 @@ h1 {
 
 label {
     font-size: 0.9rem;
-    color: #a0a0a0;
+    color: var(--text-secondary);
     display: block;
-    margin-top: 10px;
+    margin-top: 20px;
+    font-weight: 400;
     max-width: 225px;
 }
 
 .solution {
     margin-bottom: 20px;
+    padding: 10px;
+    min-width: 100px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background: var(--surface-color);
     font-size: 2.5rem;
     font-weight: 700;
     color: #fff;
